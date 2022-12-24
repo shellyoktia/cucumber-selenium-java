@@ -64,9 +64,11 @@ public class test1_steps {
 		WebElement Element = driver.findElement(By.xpath("//b[contains(text(),'Multiselect drop down')]"));
 		js.executeScript("arguments[0].scrollIntoView();", Element);
 		driver.findElement(By.xpath("//b[contains(text(),'Multiselect drop down')]/following::div[@class=' css-1hwfws3']")).click();
-		for(int i = 0; i<4; i++) {
-			driver.findElement(By.id("react-select-4-option-"+i)).click();
-		}
+		driver.findElement(By.id("react-select-4-option-1")).click();
+		driver.findElement(By.id("react-select-4-option-2")).click();
+		driver.findElement(By.id("react-select-4-option-3")).click();
+		driver.findElement(By.id("react-select-4-option-4")).click();
+		
 	}
 
 	@Then("User success input all select menu")
